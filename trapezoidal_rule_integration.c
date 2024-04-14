@@ -7,7 +7,7 @@ int main()
 {
     int num;
     float upper_lt, lower_lt, h, sum1, sum2, result;
-    // loop variables
+// loop variables
     int i, j, k;
 
     printf("Enter the upper limit: ");
@@ -19,6 +19,7 @@ int main()
     h = (upper_lt - lower_lt) / (float)num;
     // printf("h= %0.3f\n", h);
 
+// printing x and f(x) with sib-intervals
     float x[num + 1], y[num + 1];
     x[0] = lower_lt;
     y[0] = f(x[0]);
@@ -35,6 +36,7 @@ int main()
         printf("\n");
     }
 
+// calculating the final result
     sum1= y[0]+y[num];
     sum2= 0;
     for(j=1; j<num; j++){
