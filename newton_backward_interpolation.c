@@ -52,7 +52,7 @@ int main(){
     }
 
 // Printing Backward difference table
-    printf("\n Backward difference table: \n\n");
+    printf("\nBackward difference table: \n\n");
     for(l=0; l<num; l++){
         printf("%0.3f\t", x[l]);
         for(m=0; m<=l; m++){
