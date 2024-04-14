@@ -56,7 +56,7 @@ int main()
     }
 
     // Printing forward difference table
-    printf("\n Forward difference table: \n\n");
+    printf("\nForward difference table: \n\n");
     for (l = 0; l < num; l++)
     {
         printf("%0.3f\t", x[l]);
