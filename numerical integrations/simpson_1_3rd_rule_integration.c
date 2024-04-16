@@ -16,6 +16,9 @@ int main()
     scanf("%f", &lower_lt);
     printf("Enter the total number of sub-divisions: ");
     scanf("%d", &num);
+    if ((num%2)==0)
+    {
+    
     h = (upper_lt - lower_lt) / (float)num;
     // printf("h= %0.3f\n", h);
 
@@ -50,5 +53,9 @@ int main()
     }
     result= (h/3)*(sum1+(4*sum2)+(2*sum3));
     printf("\nintegration result= %f", result);
+        
+    }else{
+        printf("\nError: Please, Enter even number of sub-divisions.");
+    }
     return 0;
 }
