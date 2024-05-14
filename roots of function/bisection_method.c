@@ -28,7 +28,7 @@ float correctDecimal(int a)
 
 int main()
 {
-    float a, b, x[50], fnx, result, diff = 1;
+    float b, x[50], fnx, result, diff = 1;
     int correct;
     float arrA[50], arrB[50];
     // loop variables
@@ -39,10 +39,10 @@ int main()
     {
         printf("Enter the range: \n");
         printf("Enter the value of a: ");
-        scanf("%f", &a);
+        scanf("%f", &arrA[0]);
         printf("Enter the value of b: ");
-        scanf("%f", &b);
-        if (!((f(a) * f(b)) < 0))
+        scanf("%f", &arrB[0]);
+        if (!((f(arrA[0]) * f(arrB[0])) < 0))
         {
             printf("Entered range is invalid.\n\n");
         }
@@ -51,17 +51,15 @@ int main()
             printf("Valid range.\n\n");
         }
 
-    } while (!((f(a) * f(b)) < 0));
+    } while (!((f(arrA[0]) * f(arrB[0])) < 0));
 
-    printf("The value of a: %f\n", a);
-    printf("The value of b: %f\n", b);
+    printf("The value of a: %f\n", arrA[0]);
+    printf("The value of b: %f\n", arrB[0]);
 
     printf("Enter the number of decimal place to be corrected: ");
     scanf("%d", &correct);
 
 // calculation for the first row
-    arrA[0] = a;
-    arrB[0] = b;
     x[0] = bisect(arrA[0], arrB[0]);
     fnx = f(x[0]);
 
