@@ -1,3 +1,5 @@
+//divided_difference
+
 #include <stdio.h>
 // r=6
 // x=0.4+r/100 => x=0.46
