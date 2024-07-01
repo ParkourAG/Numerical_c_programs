@@ -28,7 +28,7 @@ float correctDecimal(int a)
 
 int main()
 {
-    float b, x[50], fnx, result, diff = 1;
+    float x[50], fnx, result, diff = 1;
     int correct;
     float arrA[50], arrB[50];
     // loop variables
